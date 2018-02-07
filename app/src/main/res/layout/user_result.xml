@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#b3b3cc"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/myUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="user "
+            android:textAlignment="center" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Result"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="Body Mass Index"
+                        android:textColor="#f20df2"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="My Height :"
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+
+                        android:id="@+id/my_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=" meter"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="My Weight :"
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+
+                        android:id="@+id/my_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=" kg"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="BMI Value :"
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+
+                        android:id="@+id/bmi_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <ImageButton
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/InfoBmiIndex"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:onClick="InfoBmiIndex"
+                        android:src="@drawable/infobutton" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="BMI \nClassification :"
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+
+                        android:id="@+id/bmi_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="25sp" />
+
+                    <ImageButton
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/InfoBmiClass"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:onClick="InfoBmiClass"
+                        android:src="@drawable/infobutton" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="My target weight :"
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+
+                        android:id="@+id/ideal_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=" kg"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <ImageButton
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:onClick="InfoIdealWeight"
+                        android:src="@drawable/infobutton" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="Calories Need per Day"
+                        android:textColor="#f20df2"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="For Maintain \nCurrent Weight :"
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+
+                        android:id="@+id/calories_maintain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=" kcal"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <ImageButton
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:onClick="InfoMaintainWeight"
+                        android:src="@drawable/infobutton" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text="For Loss Weight :"
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/calories_loss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=" kcal"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <ImageButton
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:onClick="InfoLossWeight"
+                        android:src="@drawable/infobutton" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="16dp"
+                        android:text=""
+                        android:textColor="#616161"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="24dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+
+
+                </LinearLayout>
+
+
+
+                <!--<LinearLayout/>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/estimate_weight_loss"
+                    android:orientation="vertical">
+-->
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="5dp"
+        android:onClick="btnSave"
+        android:src="@drawable/savebutton" />
+
+
+</RelativeLayout>

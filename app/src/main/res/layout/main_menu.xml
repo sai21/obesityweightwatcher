@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b3b3cc"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a64dff"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="Welcome "
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/current_user"
+                    android:text="hello"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/category_user_info"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/userInfo"
+                    android:layout_width="200dp"
+                    android:layout_height="88dp"
+                    android:gravity="center_vertical"
+                    android:onClick="userInfo"
+                    android:padding="16dp"
+                    android:paddingTop="20dp"
+                    android:text="Calories Calculator"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="userInfo"
+                    android:src="@drawable/calculator" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/category_user_dietary"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/userDietary"
+                    android:layout_width="200dp"
+                    android:layout_height="88dp"
+                    android:gravity="center_vertical"
+                    android:onClick="userDietary"
+                    android:padding="16dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/category_user_dietary"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="userDietary"
+                    android:src="@drawable/diet" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/category_user_fitness"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/userFitness"
+                    android:layout_width="200dp"
+                    android:layout_height="88dp"
+                    android:gravity="center_vertical"
+                    android:onClick="userFitness"
+                    android:padding="16dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/category_user_fitness"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="userFitness"
+                    android:src="@drawable/fitness" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/category_user_watcher"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/userWatcher"
+                    android:layout_width="200dp"
+                    android:layout_height="88dp"
+                    android:gravity="center_vertical"
+                    android:onClick="userWatcher"
+                    android:padding="16dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/category_user_weight"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="userWatcher"
+                    android:src="@drawable/watcher" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/category_health_inforamtion"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/health_information"
+                    android:layout_width="200dp"
+                    android:layout_height="88dp"
+                    android:gravity="center_vertical"
+                    android:onClick="healthInformation"
+                    android:padding="16dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/category_user_health_information"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="healthInformation"
+                    android:src="@drawable/healthinformation" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/logOut"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@color/category_logout"
+                android:gravity="center_vertical"
+                android:onClick="userLogout"
+                android:padding="30dp"
+                android:text="@string/category_user_logout"
+                android:textAlignment="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

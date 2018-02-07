@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Obesity Weight Watcher</string>
+    <string name="header_login"><u>Login</u></string>
+    <string name="header_sign_up"><u>Sign Up</u></string>
+    <string name="header_main_menu"><u>Main Menu</u></string>
+    <string name="header_user_info"><u>User Information</u></string>
+    <string name="text_user_name">User name :</string>
+    <string name="text_password">Password :</string>
+
+    <string name="category_user_info">User Information</string>
+    <string name="category_user_dietary">Dietary Module</string>
+    <string name="category_user_fitness">Fitness Module</string>
+    <string name="category_user_weight">Diet Watcher</string>
+    <string name="category_user_health_information">Health Information</string>
+    <string name="category_user_logout"><b>logout</b></string>
+
+
+
+    <!-- Label for dropdown menu option if the pet is male [CHAR LIMIT=20] -->
+    <string name="gender_male">Male</string>
+
+    <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
+    <string name="gender_female">Female</string>
+
+    <!-- Toast message in editor when current pet has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_pet_failed">Error with updating pet</string>
+
+    <!-- Label for the pet's pasword if the password is unknown [CHAR LIMIT=20] -->
+    <string name="unknown_password">Unknown password</string>
+
+
+
+
+
+    <string name="food_A">A</string>
+    <string name="food_B">B</string>
+    <string name="food_C">C</string>
+
+
+
+
+    <string name="activity_A">A</string>
+    <string name="activity_B">B</string>
+    <string name="activity_C">C</string>
+
+
+
+
+
+
+
+</resources>

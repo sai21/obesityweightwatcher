@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Background color for the user info category -->
+    <color name="category_user_info">#FD8E09</color>
+
+    <!-- Background color for the dietary members category -->
+    <color name="category_user_dietary">#379237</color>
+
+    <!-- Background color for the fitness category -->
+    <color name="category_user_fitness">#8800A0</color>
+
+    <!-- Background color for the weight watcher category -->
+    <color name="category_user_watcher">#ff4d4d</color>
+
+    <!-- Background color for the logout button -->
+    <color name="category_logout">#18cffd</color>
+
+    <!-- Background color for the health information -->
+    <color name="category_health_inforamtion">#ff00ff</color>
+
+</resources>
